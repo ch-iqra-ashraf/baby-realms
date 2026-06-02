@@ -4,77 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <title>Baby Realm</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+
 </head>
 
 <body>
 
+
+
+
+
     <!-- nav section starts here -->
+    <header>
+        <nav class="flex justify-between pt-2">
+            <div>
+                <img src="images/logo.svg" alt="logo">
+            </div>
 
-    <nav class="flex justify-between pt-2">
-        <div>
-            <img src="images/logo.svg" alt="logo">
+            <div class="hidden md:block">
+                <input type="search" placeholder="     Search Products"
+                    class="w-80 h-10 border border-gray-300 hover:border-teal-700 rounded-full mt-4">
+                <button class="bg-teal-700 text-white h-10 rounded-full w-25">Search</button>
+            </div>
+
+
+            <div class="text-teal-700 flex justify-center mr-4 p-5 gap-x-4">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path fill-rule="evenodd"
+                        d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path
+                        d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path
+                        d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                </svg>
+            </div>
+        </nav>
+        <div class="hidden md:flex justify-center items-center bg-teal-700 text-white gap-x-6 h-10">
+            <p>HOME</p>
+            <p>FASHION</p>
+            <p>GEAR</p>
+            <p>FEEDING</p>
+            <p>BATH</p>
+            <p>SAFETY</p>
+            <p>TOYS</p>
+            <p>DIAPERING</p>
+            <p>MOMS</p>
+            <p>NURSERY</p>
+            <p>SCHOOL</p>
+            <p>BIRTHDAY</p>
+            <p>SALE</p>
+            <p>NEW ARRIVAL</p>
         </div>
-
-        <div class="hidden md:block">
-            <input type="search" placeholder="     Search Products"
-                class="w-80 h-10 border border-gray-300 hover:border-teal-700 rounded-full mt-4">
-            <button class="bg-teal-700 text-white h-10 rounded-full w-25">Search</button>
-        </div>
-
-
-        <div class="text-teal-700 flex justify-center mr-4 p-5 gap-x-4">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                <path fill-rule="evenodd"
-                    d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
-                    clip-rule="evenodd" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                <path
-                    d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                <path
-                    d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
-            </svg>
-        </div>
-    </nav>
-
-    <div class="hidden md:flex justify-center items-center bg-teal-700 text-white gap-x-6 h-10">
-        <p>HOME</p>
-        <p>FASHION</p>
-        <p>GEAR</p>
-        <p>FEEDING</p>
-        <p>BATH</p>
-        <p>SAFETY</p>
-        <p>TOYS</p>
-        <p>DIAPERING</p>
-        <p>MOMS</p>
-        <p>NURSERY</p>
-        <p>SCHOOL</p>
-        <p>BIRTHDAY</p>
-        <p>SALE</p>
-        <p>NEW ARRIVAL</p>
-    </div>
+    </header>
     <!-- nav section ends here -->
 
     <!-- hero section starts here -->
+    <hero>
+        <div
+            class="scrollbar-none hidden md:flex w-full snap-x snap-mandatory overflow-x-auto scroll-smooth rounded-lg">
+            <div class="w-full shrink-0 snap-center"><img src="images/hero.webp" class="w-full h-100 object-cover" />
+            </div>
+            <div class="w-full shrink-0 snap-center"><img src="images/hero1.webp" class="w-full h-100 object-cover" />
+            </div>
+            <div class="w-full shrink-0 snap-center"><img src="images/hero2.webp" class="w-full h-100 object-cover" />
+            </div>
+        </div>
 
-    <div class="hidden md:flex w-full snap-x snap-mandatory overflow-x-auto scroll-smooth rounded-lg">
-        <div class="w-full shrink-0 snap-center"><img src="images/hero.webp" class="w-full h-100 object-cover" /></div>
-        <div class="w-full shrink-0 snap-center"><img src="images/hero1.webp" class="w-full h-100 object-cover" /></div>
-        <div class="w-full shrink-0 snap-center"><img src="images/hero2.webp" class="w-full h-100 object-cover" /></div>
-    </div>
-
-    <div class="flex md:hidden w-full snap-x snap-mandatory overflow-x-auto scroll-smooth rounded-lg">
-        <div class="w-full shrink-0 snap-center"><img src="images/mobile-hero.webp"
-                class="w-full  h-100 sm:h-130 object-cover" /></div>
-        <div class="w-full shrink-0 snap-center"><img src="images/mobile-hero2.webp"
-                class="w-full  h-100 sm:h-130 object-cover" /></div>
-        <div class="w-full shrink-0 snap-center"><img src="images/mobile-hero3.webp"
-                class="w-full  h-100 sm:h-130 object-cover" /></div>
-    </div>
+        <div
+            class="scrollbar-none flex md:hidden w-full snap-x snap-mandatory overflow-x-auto scroll-smooth rounded-lg">
+            <div class="w-full shrink-0 snap-center"><img src="images/mobile-hero.webp"
+                    class="w-full  h-100 sm:h-130 object-cover" /></div>
+            <div class="w-full shrink-0 snap-center"><img src="images/mobile-hero2.webp"
+                    class="w-full  h-100 sm:h-130 object-cover" /></div>
+            <div class="w-full shrink-0 snap-center"><img src="images/mobile-hero3.webp"
+                    class="w-full  h-100 sm:h-130 object-cover" /></div>
+        </div>
+    </hero>
     <!-- hero section starts here -->
 
     <!-- Product categories -->
@@ -88,24 +102,488 @@
     <!-- Best Sellers -->
     <div>
         <fieldset class="border-t border-gray-300 border-b-0 border-l-0 border-r-0 text-center">
-            <legend class="px-3 font-bold text-purple-800 text-xl mx-auto">Best Seller</legend>
+            <legend class="px-3 font-bold text-teal-800 text-xl mx-auto">Best Seller</legend>
         </fieldset>
-        <p class="text-center text-gray-500 mt-1">Enjoy the all best products</p>
+        <p class="text-center font-light italic text-gray-500 mt-1">Enjoy the all best products</p>
     </div>
 
+
     <!-- Product images -->
-   <div class="w-95 h-100 m-4">
-  <div class="border border-gray-300 hover:border-teal-700 flex flex-col items-center group">
-    <div class="overflow-hidden">
-      <img src="images/image-7.webp" alt="Kids Sando Green" class="block group-hover:hidden transition-opacity duration-300">
-      <img src="images/image-8.webp" alt="Kids Sando Green" class="hidden group-hover:block transition-transform duration-300 scale-100 group-hover:scale-110  w-full h-full object-cover">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 p-4">
+
+        <div
+            class="border border-gray-300 hover:border-teal-700 flex flex-col items-center group cursor-grab rounded-md bg-white">
+            <div class="relative overflow-hidden w-full aspect-square">
+                <img src="images/image-7.webp" alt="Kids Sando"
+                    class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-0 transition-opacity duration-300">
+                <img src="images/image-8.webp" alt="Kids Sando"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300">
+            </div>
+            <p class="image-description mt-3 text-center px-2 text-sm text-gray-700">Kids Sando &amp; Short Set Stripes
+            </p>
+            <p class="text-sm my-1"><span class="line-through text-gray-400">PKR 975</span> <span
+                    class="text-teal-700 font-semibold">PKR 690</span></p>
+            <div class="my-3 w-full px-4">
+                <button
+                    class="border border-teal-500 hover:bg-teal-700 rounded-lg w-full flex justify-between px-4 text-teal-700 hover:text-white h-10 items-center cursor-pointer transition-colors">
+                    <span>Quick Shop</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div
+            class="border border-gray-300 hover:border-teal-700 flex flex-col items-center group cursor-grab rounded-md bg-white">
+            <div class="relative overflow-hidden w-full aspect-square">
+                <img src="images/image-5.webp" alt="Kids T-Shirt"
+                    class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-0 transition-opacity duration-300">
+                <img src="images/image-6.webp" alt="Kids T-Shirt"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 group-hover:scale-115 transition-all duration-300">
+            </div>
+            <p class="image-description mt-3 text-center px-2 text-sm text-gray-700">Kids T-Shirt &amp; Short Set
+                Printed</p>
+            <p class="text-sm my-1"><span class="line-through text-gray-400">PKR 1,395</span> <span
+                    class="text-teal-800 font-semibold">PKR 995</span></p>
+            <div class="my-3 w-full px-4">
+                <button
+                    class="border border-teal-500 hover:bg-teal-700 rounded-lg w-full flex justify-between px-4 text-teal-700 hover:text-white h-10 items-center cursor-pointer transition-colors">
+                    <span>Quick Shop</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div
+            class="border border-gray-300 hover:border-teal-700 flex flex-col items-center group cursor-grab rounded-md bg-white">
+            <div class="relative overflow-hidden w-full aspect-square">
+                <img src="images/image-13.webp" alt="Kids Sando Bunny"
+                    class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-0 transition-opacity duration-300">
+                <img src="images/image-14.webp" alt="Kids Sando Bunny"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 group-hover:scale-115 transition-all duration-300">
+            </div>
+            <p class="image-description mt-3 text-center px-2 text-sm text-gray-700">Kids Sando &amp; Short Set Bunny
+            </p>
+            <p class="text-sm my-1"><span class="line-through text-gray-400">PKR 975</span> <span
+                    class="text-teal-800 font-semibold">PKR 690</span></p>
+            <div class="my-3 w-full px-4">
+                <button
+                    class="border border-teal-500 hover:bg-teal-700 rounded-lg w-full flex justify-between px-4 text-teal-700 hover:text-white h-10 items-center cursor-pointer transition-colors">
+                    <span>Quick Shop</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div
+            class="border border-gray-300 hover:border-teal-700 flex flex-col items-center group cursor-grab rounded-md bg-white">
+            <div class="relative overflow-hidden w-full aspect-square">
+                <img src="images/image-9.webp" alt="Kids T-Shirt Unicorn"
+                    class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-0 transition-opacity duration-300">
+                <img src="images/image-10.webp" alt="Kids T-Shirt Unicorn"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 group-hover:scale-115 transition-all duration-300">
+            </div>
+            <p class="image-description mt-3 text-center px-2 text-sm text-gray-700">Kids T-Shirt &amp; Short Set
+                Unicorn</p>
+            <p class="text-sm my-1"><span class="line-through text-gray-400">PKR 1,695</span> <span
+                    class="text-teal-800 font-semibold">PKR 1,195</span></p>
+            <div class="my-3 w-full px-4">
+                <button
+                    class="border border-teal-500 hover:bg-teal-700 rounded-lg w-full flex justify-between px-4 text-teal-700 hover:text-white h-10 items-center cursor-pointer transition-colors">
+                    <span>Quick Shop</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div
+            class="border border-gray-300 hover:border-teal-700 flex flex-col items-center group cursor-grab rounded-md bg-white">
+            <div class="relative overflow-hidden w-full aspect-square">
+                <img src="images/image-11.webp" alt="Kids T-Shirt Unicorn"
+                    class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-0 transition-opacity duration-300">
+                <img src="images/image-12.webp" alt="Kids T-Shirt Unicorn"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 group-hover:scale-115 transition-all duration-300">
+            </div>
+            <p class="image-description mt-3 text-center px-2 text-sm text-gray-700">Kids T-Shirt &amp; Short Set
+                Unicorn</p>
+            <p class="text-sm my-1"><span class="line-through text-gray-400">PKR 1,695</span> <span
+                    class="text-teal-800 font-semibold">PKR 1,195</span></p>
+            <div class="my-3 w-full px-4">
+                <button
+                    class="border border-teal-500 hover:bg-teal-700 rounded-lg w-full flex justify-between px-4 text-teal-700 hover:text-white h-10 items-center cursor-pointer transition-colors">
+                    <span>Quick Shop</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
     </div>
-    <p class="image-description">Kids Sando &amp; Short Set White and Pink - Oolaa</p>
-    <div>
-      <div>Quick Shop</div>
+
+    <!-- view all buuton -->
+    <div class="flex justify-center w-full my-6">
+        <button
+            class="rounded-full text-teal-800 border border-teal-800 hover:bg-teal-700 ease-in duration-400 hover:text-white w-35 flex justify-center h-10 items-center">
+            View All<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+            </svg>
+        </button>
     </div>
-  </div>
-</div>
+
+    <!-- hero image -->
+    <div class="w-full flex justify-center">
+        <div class="w-4/5">
+            <img src="images/image-hero2.webp" alt="baby products">
+        </div>
+    </div>
+
+    <!-- product images -->
+    <div class="flex flex-wrap justify-center gap-10 m-5">
+        <div class="w-75 hover:opacity-70"> <img src="images/image-15.webp" alt="baby girl"> </div>
+        <div class="w-75 hover:opacity-70"> <img src="images/image-16.webp" alt="baby boy"> </div>
+        <div class="w-75 hover:opacity-70"> <img src="images/image-17.webp" alt="baby bags"> </div>
+        <div class="w-75 hover:opacity-70"> <img src="images/image-18.webp" alt="baby footwears"> </div>
+        <div class="w-75 hover:opacity-70"> <img src="images/image-19.webp" alt="baby girl"> </div>
+        <div class="w-75 hover:opacity-70"> <img src="images/image-20.webp" alt="baby boy"> </div>
+        <div class="w-75 hover:opacity-70"> <img src="images/image-21.webp" alt="baby bags"> </div>
+        <div class="w-75 hover:opacity-70"> <img src="images/image-22.webp" alt="baby footwears"> </div>
+    </div>
+
+    <!-- new arrivals -->
+    <section>
+        <div>
+            <fieldset class="border-t border-gray-300 border-b-0 border-l-0 border-r-0 text-center">
+                <legend class="px-3 font-bold text-teal-800 text-xl mx-auto">New Arrivals</legend>
+            </fieldset>
+            <p class="text-center font-light italic text-gray-500 mt-1">Discover what's new!</p>
+        </div>
+    </section>
+    <!-- new arrival product -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 p-4">
+
+        <div
+            class="border border-gray-300 hover:border-teal-700 flex flex-col items-center group cursor-grab rounded-md bg-white">
+            <div class="relative overflow-hidden w-full aspect-square">
+                <img src="images/image-23.webp" alt="Kids Sando"
+                    class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-0 transition-opacity duration-300">
+                <img src="images/image-24.webp" alt="Kids Sando"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300">
+            </div>
+            <p class="image-description mt-3 text-center px-2 text-sm text-gray-700">Baby Diaper Bag (Waterproof) Air
+                Balloon
+            </p>
+            <p class="text-sm my-1"><span class="line-through text-gray-400">PKR 1975</span> <span
+                    class="text-teal-700 font-semibold">PKR 1290</span></p>
+            <div class="my-3 w-full px-4">
+                <button
+                    class="border border-teal-500 hover:bg-teal-700 rounded-lg w-full flex justify-between px-4 text-teal-700 hover:text-white h-10 items-center cursor-pointer transition-colors">
+                    <span>Quick Shop</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div
+            class="border border-gray-300 hover:border-teal-700 flex flex-col items-center group cursor-grab rounded-md bg-white">
+            <div class="relative overflow-hidden w-full aspect-square">
+                <img src="images/image-25.webp" alt="Kids T-Shirt"
+                    class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-0 transition-opacity duration-300">
+                <img src="images/image-26.webp" alt="Kids T-Shirt"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 group-hover:scale-115 transition-all duration-300">
+            </div>
+            <p class="image-description mt-3 text-center px-2 text-sm text-gray-700">Kids Slippers Dinosaur o
+            </p>
+            <p class="text-sm my-1"><span class="line-through text-gray-400">PKR 1,395</span> <span
+                    class="text-teal-800 font-semibold">PKR 995</span></p>
+            <div class="my-3 w-full px-4">
+                <button
+                    class="border border-teal-500 hover:bg-teal-700 rounded-lg w-full flex justify-between px-4 text-teal-700 hover:text-white h-10 items-center cursor-pointer transition-colors">
+                    <span>Quick Shop</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div
+            class="border border-gray-300 hover:border-teal-700 flex flex-col items-center group cursor-grab rounded-md bg-white">
+            <div class="relative overflow-hidden w-full aspect-square">
+                <img src="images/image-27.webp" alt="Kids Sando Bunny"
+                    class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-0 transition-opacity duration-300">
+                <img src="images/image-28.webp" alt="Kids Sando Bunny"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 group-hover:scale-115 transition-all duration-300">
+            </div>
+            <p class="image-description mt-3 text-center px-2 text-sm text-gray-700">Kids Sandals With Sole Lights
+            </p>
+            <p class="text-sm my-1"><span class="line-through text-gray-400">PKR 2975</span> <span
+                    class="text-teal-800 font-semibold">PKR 1690</span></p>
+            <div class="my-3 w-full px-4">
+                <button
+                    class="border border-teal-500 hover:bg-teal-700 rounded-lg w-full flex justify-between px-4 text-teal-700 hover:text-white h-10 items-center cursor-pointer transition-colors">
+                    <span>Quick Shop</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div
+            class="border border-gray-300 hover:border-teal-700 flex flex-col items-center group cursor-grab rounded-md bg-white">
+            <div class="relative overflow-hidden w-full aspect-square">
+                <img src="images/image-32.webp" alt="Kids T-Shirt Unicorn"
+                    class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-0 transition-opacity duration-300">
+                <img src="images/image-33.webp" alt="Kids T-Shirt Unicorn"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 group-hover:scale-115 transition-all duration-300">
+            </div>
+            <p class="image-description mt-3 text-center px-2 text-sm text-gray-700">Kids Slippers Candy Off White -
+                Sunshine
+            </p>
+            <p class="text-sm my-1"><span class="line-through text-gray-400">PKR 1,895</span> <span
+                    class="text-teal-800 font-semibold">PKR 1,695</span></p>
+            <div class="my-3 w-full px-4">
+                <button
+                    class="border border-teal-500 hover:bg-teal-700 rounded-lg w-full flex justify-between px-4 text-teal-700 hover:text-white h-10 items-center cursor-pointer transition-colors">
+                    <span>Quick Shop</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div
+            class="border border-gray-300 hover:border-teal-700 flex flex-col items-center group cursor-grab rounded-md bg-white">
+            <div class="relative overflow-hidden w-full aspect-square">
+                <img src="images/image-hover-33.webp" alt="Kids T-Shirt Unicorn"
+                    class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-0 transition-opacity duration-300">
+                <img src="images/image-hover-34.webp" alt="Kids T-Shirt Unicorn"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 group-hover:scale-115 transition-all duration-300">
+            </div>
+            <p class="image-description mt-3 text-center px-2 text-sm text-gray-700">Baby Knee Pads Stripes Red & Pink
+            </p>
+            <p class="text-sm my-1"><span class="line-through text-gray-400">PKR 1,295</span> <span
+                    class="text-teal-800 font-semibold">PKR 995</span></p>
+            <div class="my-3 w-full px-4">
+                <button
+                    class="border border-teal-500 hover:bg-teal-700 rounded-lg w-full flex justify-between px-4 text-teal-700 hover:text-white h-10 items-center cursor-pointer transition-colors">
+                    <span>Quick Shop</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- kids fashion starts here-->
+    <section>
+        <div class="flex justify-center">
+            <div class="w-4/5 p-6">
+                <img src="images/Kids_fashion.webp" alt="Kids Fashion">
+            </div>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-10 m-5">
+            <div class="w-75 hover:opacity-70"> <img src="images/image-34.webp" alt="baby girl"> </div>
+            <div class="w-75 hover:opacity-70"> <img src="images/image-35.webp" alt="baby boy"> </div>
+            <div class="w-75 hover:opacity-70"> <img src="images/image-36.webp" alt="baby bags"> </div>
+            <div class="w-75 hover:opacity-70"> <img src="images/image-37.webp" alt="baby footwears"> </div>
+            <div class="w-75 hover:opacity-70"> <img src="images/new-image-4.webp" alt="baby girl"> </div>
+            <div class="w-75 hover:opacity-70"> <img src="images/new-image1.webp" alt="baby boy"> </div>
+            <div class="w-75 hover:opacity-70"> <img src="images/new-image2.webp" alt="baby bags"> </div>
+            <div class="w-75 hover:opacity-70"> <img src="images/new-image3.webp" alt="baby footwears"> </div>
+        </div>
+    </section>
+    <!-- kids section ends here -->
+
+
+    <!-- footwear products starts here -->
+    <section>
+        <div class="flex justify-center m-3">
+            <div class="w-4/5 p-6">
+                <img src="images/footer-caption.webp" alt="Footwear">
+            </div>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-10 m-5">
+            <div class="w-75 hover:opacity-70"> <img src="images/image-38.webp" alt="baby girl"> </div>
+            <div class="w-75 hover:opacity-70"> <img src="images/image-39.webp" alt="baby boy"> </div>
+            <div class="w-75 hover:opacity-70"> <img src="images/image-40.webp" alt="baby bags"> </div>
+            <div class="w-75 hover:opacity-70"> <img src="images/image-41.webp" alt="baby footwears"> </div>
+        </div>
+    </section>
+    <!-- footwear products ends here -->
+
+
+    <!-- more to explore products starts here -->
+    <section>
+        <div class="flex justify-center m-3">
+            <div class="w-4/5 p-6">
+                <img src="images/more to explore.webp" alt="More to Explore">
+            </div>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-10 m-5">
+            <div class="w-75 hover:opacity-70"> <img src="images/img-jpg-4.jpg" alt="baby girl"> </div>
+            <div class="w-75 hover:opacity-70"> <img src="images/image-jpg-1.jpg" alt="baby boy"> </div>
+            <div class="w-75 hover:opacity-70"> <img src="images/image-jpg-2.jpg" alt="baby bags"> </div>
+            <div class="w-75 hover:opacity-70"> <img src="images/image-jpg-3.jpg" alt="baby footwears"> </div>
+        </div>
+    </section>
+    <!-- more to explore products ends here -->
+
+    <section>
+
+        <div class="flex flex-wrap md:flex-nowrap justify-center items-center">
+            <div class="p-9 md:w-1/2">
+                <h3 class="text-2xl bold text-teal-700">Online Baby Store</h3>
+                <p class="text-justify">Welcome to Baby Realm, your premier one-stop destination for all things
+                    baby-related in Pakistan. Our mission
+                    is to simplify your parenting journey by providing the world’s most trusted brands and high-quality
+                    products at market-competitive rates. From daily essentials like diapers and formula to stylish
+                    apparel
+                    and engaging toys, we ensure everything you need is just a click away. We pride ourselves on
+                    offering
+                    the convenience of prompt home delivery across every city, bringing reliability straight to your
+                    doorstep. Discover the Baby Realm difference today and let us help
+                    make your parenting experience truly effortless and delightful.</p>
+            </div>
+            <div class="p-9 md:w-1/2">
+                <h3 class="text-2xl bold text-teal-700">Baby Products Online Shopping</h3>
+                <p class="text-justify">Before the rise of online shopping, finding quality essentials for your children
+                    was often a
+                    time-consuming and exhausting task for busy parents. Baby Realm changes the game by bringing the
+                    market’s
+                    top-tier brands and premium products directly to your screen at highly competitive prices.You can
+                    browse
+                    our vast collection of baby gear with total peace of
+                    mind, choosing cash on delivery for a secure and seamless checkout. <br>
+                    Plus, enjoy the simplicity of a flat shipping rate of PKR 250 on every order, regardless of
+                    your location.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <section>
+            <div class="flex flex-col md:flex-row justify-center bg-teal-700 text-white md:justify-between p-10">
+                <div class="m-2">
+                    <h4 class="text-2xl bold"> Address </h4>
+                    <p>Baby planet warehouse, Block A, Zacotex buildings, <br>
+                        1km roohi naala, 22km ferozepur road. Lahore</p>
+                </div>
+                <div class="m-2">
+                    <h4 class="text-2xl bold">
+                        Call Us</h4>
+                    <p> +92 333 142 3837</p>
+                    <br>
+                    <h4 class="text-2xl">Whatsapp</h4>
+                    <p> +92 347 794 4327</p>
+                </div>
+                <div class="m-2">
+                    <h4 class="text-2xl bold"> Email</h4>
+                    <p> info@babyrealm.pk</p>
+                </div>
+                <div class="m-2">
+                    <h4 class="text-2xl bold"> Working Hours</h4>
+                    <p> 10:00 - 20:00</p>
+                </div>
+            </div>
+
+            
+                <div>
+                    <hr class="text-white">
+                </div>
+            
+            <div class="flex bg-teal-700 text-white flex-col md:flex-row md:justify-between p-15">
+                <div>
+                    <h4 class="text-2xl m-2">Be the First to Know</h4>
+                    <p>Get all the latest information on Events, Sales and Offers. Sign up for newsletter today.</p>
+                </div>
+
+                <div>
+                    <div class="border border-white mt-6">
+                        <input type="email" placeholder="  Your email address" class="w-80 h-10 border hover:border-teal-300 bg-white text-gray-700">
+                        <button class=" h-10 w-20">Subscribe</button>
+                    </div>
+                    <label><input type="checkbox"> I agree with the terms and conditions.</label>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full py-8 bg-gray-50">
+            <div class="flex justify-evenly flex-wrap gap-6 px-4">
+            <div>
+                <p class="font-bold text-teal-800 text-base">About</p>
+                <a href="#" class="text-gray-500 hover:text-teal-700 text-sm transition-colors">About Us</a>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <p class="font-bold text-teal-800 text-base">Information</p>
+                <a href="#"class="text-gray-500 hover:text-teal-700 text-sm transition-colors">Shipping Policy</a>
+                <a href="#"class="text-gray-500 hover:text-teal-700 text-sm transition-colors">Return to Exchange</a>
+                <a href="#"class="text-gray-500 hover:text-teal-700 text-sm transition-colors">Payment Options</a>
+                <a href="#" class="text-gray-500 hover:text-teal-700 text-sm transition-colors">Terms and Conditions</a>
+            </div>
+
+            <div>
+                <p class="font-bold text-teal-800 text-base">Support</p>
+                <a href="#" class="text-gray-500 hover:text-teal-700 text-sm transition-colors">Contact Us</a>
+                <a href="#" class="text-gray-500 hover:text-teal-700 text-sm transition-colors">FAQ's</a>
+            </div>
+            <div>
+                <p class="font-bold text-teal-800 text-base">Community</p>
+                <a href="#" class="text-gray-500 hover:text-teal-700 text-sm transition-colors">Blog</a>
+                <a href="#" class="text-gray-500 hover:text-teal-700 text-sm transition-colors">Feedback</a>
+            </div>
+            <div>
+                <p class="font-bold text-teal-800 text-base">Offices</p>
+                <a href="#" class="text-gray-500 hover:text-teal-700 text-sm transition-colors">Lahore</a>
+                <a href="#" class="text-gray-500 hover:text-teal-700 text-sm transition-colors">Karachi</a>
+            </div>
+        </div>
+        </section>
+
+
+        <div class="px-4 py-3">
+             <p class="text-gray-400 text-sm"> Copyright © 2026 <span class="text-teal-700">Baby Realm</span> all rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
 </body>
 
 </html>
